@@ -11,7 +11,7 @@ namespace Persistense.Configurations
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.Property(e => e.Id).HasDefaultValueSql("nextval('\"Order_Id_seq\"'::regclass)");
+            builder.Property(e => e.Id).UseSerialColumn();
 
             builder.Property(e => e.Description).HasMaxLength(500);
 

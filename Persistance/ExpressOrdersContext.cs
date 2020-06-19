@@ -22,7 +22,7 @@ namespace ExpressOrders.Persistense
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("Host=localhost;Database=ExpressOrdes;Username=postgres;Password=qwertyAhuel");
+                optionsBuilder.UseNpgsql("Host=localhost;Database=ExpressOrders;Username=postgres;Password=postgres");
             }
         }
 
