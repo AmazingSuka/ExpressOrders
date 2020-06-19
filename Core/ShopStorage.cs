@@ -20,7 +20,7 @@ namespace ExpressOrders.Core
             using ExpressOrdersContext dbContext = new ExpressOrdersContext();
             using TransactionScope scope = new TransactionScope(
                 TransactionScopeOption.RequiresNew, 
-                new TransactionOptions { IsolationLevel = System.Transactions.IsolationLevel.Serializable });
+                new TransactionOptions { IsolationLevel = System.Transactions.IsolationLevel.Snapshot });
             
             Product entity = dbContext.Product.Where(prod => prod.Name.Equals(product.Name)).Single();
 
