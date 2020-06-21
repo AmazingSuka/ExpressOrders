@@ -1,6 +1,6 @@
 # ExpressOrders is a technical task by Integrix.
 
-Solution created on .Net Core 3.0, PostgreSQL 11.
+Solution created on .Net Core 3.0, PostgreSQL 11, EntityFramework Core (Npgsql).
 
 ### Solution has two test ways:
 1. Console Debugging.
